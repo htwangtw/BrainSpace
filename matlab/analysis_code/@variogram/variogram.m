@@ -102,6 +102,9 @@ classdef variogram
             if obj.num_workers ~= 0 && ~isnan(obj.random_state)
                 warning('Due to the way that random number initialization works on parallel pools, the results of this script will not be identical on separate runs even with the random state defined.');
             end
+            if ~isinf(obj.ns) && obj.ns >= size(obj.D,1)
+                error('The number of samples must be smaller than the number of nodes or infinite.');
+            end
         end
         
         %%% Fitting function %%%
