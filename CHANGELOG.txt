@@ -27,12 +27,21 @@ Python:
   - Added a new layout for plot_hemispheres.
   - Default diffusion time now set to 0.
 
+Python:
+  - New functionality
+    - brainspace.mesh.mesh_io.read_surface now supports gzipped files. 
+
 ReadTheDocs
  - Updated MATLAB documentation of GradientMaps with the verbose flag.
  - Updated MATLAB documentation of plot_hemispheres to reflect the new 
    changes.  
  - Added MATLAB/Python documentation/tutorial for the variogram function. 
  - Corrected the diffusion maps documentation.
+
+Hotfix, January 2021 -- MATLAB Joint Alignment
+MATLAB:
+- Fixed faulty dimensionality extraction in joint alignment of asymmetric
+matrices. 
 
 Hotfix, January 2021 -- MATLAB Joint Alignment
 MATLAB:
